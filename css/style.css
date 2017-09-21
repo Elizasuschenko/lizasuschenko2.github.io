@@ -1,0 +1,803 @@
+ @font-face{
+ 	font-family: "Mont Bold";
+	src: url(../fonts/Montserrat-ExtraBold.ttf);
+ } 
+  @font-face{
+ 	font-family: "Mont Reg";
+	src: url(../fonts/Montserrat-Regular.ttf);
+ } 
+  @font-face{
+ 	font-family: "Ral Reg";
+	src: url(../fonts/Raleway-Regular.ttf);
+ }
+  @font-face{
+  	font-family: "Merri Bold"; 
+  	src: url(../fonts/Merriweather-Bold.ttf);
+  }
+  @font-face{
+  	font-family: "Merri Reg"; 
+  	src: url(../fonts/Merriweather-Regular.ttf);
+  	
+  }
+*{
+	box-sizing: border-box;
+}
+body, html, section{
+	margin: 0;
+	padding: 0;
+}
+.clearfix:after{
+	clear: both;
+	content: "";
+    display: table;
+}
+
+/* section text */
+.section-text{
+	text-align: center;
+}
+.section-text h1{
+	margin: 0;
+	color: #363636;
+	font-family: "Mont Bold";
+	font-size: 38px;
+	padding-top: 200px;
+}
+.section-text p{
+	color: #838484;
+	font-size: 18px;
+	font-family: "Mant Reg";
+	margin-top: 0;
+	margin-bottom: 125px;
+}
+
+/* Header */
+header{
+	background-color: #eff0f2;
+}
+
+.logo{
+	float: left;
+	width: 113px;
+	margin-top: 64px;
+}
+.logo-border{
+	border: 5px black solid;
+	font-size: 17px;
+	text-align: center;
+	font-family: "Mont Bold";
+	height: 45px;
+}
+.logo-border span{
+	font-size: 21px;
+	color: #77efe5;
+}
+.logo-border a{
+	margin-top: 2px;
+	text-decoration: none;
+	color: black;
+	display: block;
+}
+.menu{
+	margin-top: 80px;
+	float: right;
+ 	width: 30px;
+ 	height: 20px;
+}
+.line{
+	width: 30px;
+	height: 4px;
+	position: absolute;
+	background-color: #606061;
+	display: inline-block;
+	-webkit-border-radius: 2px ;
+	-moz-border-radius: 2px ;
+	-ms-border-radius: 2px ;
+	-o-border-radius: 2px ;
+	border-radius: 2px ;
+
+}
+.line:after{
+	position: absolute;
+	display: inline-block;
+	content: " ";
+	width: 30px;
+	height: 4px;
+	background-color: #606061;
+	-webkit-transform: translateY(18px);
+	-ms-transform: translateY(18px);
+	-o-transform: translateY(18px);
+	transform: translateY(18px);
+	-webkit-border-radius: 2px ;
+	-moz-border-radius: 2px ;
+	-ms-border-radius: 2px ;
+	-o-border-radius: 2px ;
+	border-radius: 2px ;
+}
+.line:before{
+	position: absolute;
+	display: inline-block;
+	content: " ";
+	width: 30px;
+	height: 4px;
+	background-color: #606061;
+	-webkit-transform: translateY(9px);
+	-ms-transform: translateY(9px);
+	-o-transform: translateY(9px);
+	transform: translateY(9px);
+	-webkit-border-radius: 2px ;
+	-moz-border-radius: 2px ;
+	-ms-border-radius: 2px ;
+	-o-border-radius: 2px ;
+	border-radius: 2px ;
+}
+.menu a{
+	display: inline-block;
+	padding: 12px 15px;
+	position: absolute;
+}
+.main-text{
+	text-align: center;
+
+}
+.main-text h1{
+	margin-top: 200px;
+	font-family: "Mont Bold";
+	font-size: 45px;
+	color: #606061;
+	text-shadow: 0px 9px 10px rgba(0, 0, 0, 0.24);
+	margin-bottom: 140px;
+}
+.main-text button{
+	width: 225px;
+	height: 50px;
+	border: #3c3c3d solid 1px;
+	margin-bottom: 125px;
+	background-color: #eff0f2;
+	font-size: 18px;
+}
+.main-text button a{
+	text-decoration: none;
+	color: #3c3c3d;
+	font-family: "Mont Reg";
+}
+/* About Us */
+#about-us{
+	background-color: #f8fafa;
+}
+.about-us{
+	margin-bottom: 45px;
+}
+.about-slaid{
+	margin-left: 70px;
+	width: 480px;
+}
+.slick-dots {
+	bottom: -30px;
+}
+.slick-dots li{
+	width: 10px;
+}
+.slick-dots li button{
+	padding: 3px;
+	margin-left: 145px;
+}
+.slick-dots li button:before{
+	
+	width: 10px;
+	height: 10px;
+	background-color: #00a59c;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	color: transparent;
+}
+.slick-dots li.slick-active button:before{
+	color: transparent;
+	background-color: #00a59c;
+}
+.about-info{
+	padding-top: 15px;
+	padding-left: 45px;
+	padding-right: 50px;
+}
+.about-info h2{
+	color: #646464;
+	font-size: 17px;
+	font-family: "Mant Bold";
+	margin-bottom: 32px;
+}
+.about-info p{
+	font-size: 16px;
+	color: #bfc1c1;
+	margin-bottom: 45px;
+	font-family: "Ral Reg";
+	line-height: 25px;
+}
+/* Works */
+.work{
+	margin-bottom: 125px;
+}
+.work-img{
+	margin-bottom: 15px;
+}
+/* Servisec */
+#services{
+	background-color: #f9fbfb;
+}
+.services{
+	position: relative;
+	margin-bottom: 15px;
+}
+.services-img{
+	position: relative;
+}
+.services-img img{
+	position: absolute;
+}
+.services-img img:before {
+	content: "";
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	
+}
+.services-text{
+	z-index: 999;
+	position: relative;
+	background: rgba(0,0,0,0.3);
+}
+.services-text h3{
+	margin-bottom: 18px;
+	margin-top: 0;
+	font-size: 20px;
+	color: white;
+}
+.services-text p{
+	margin-bottom: 45px;
+	margin-top: 0;
+	font-size: 16px;
+	color: white;
+}
+.services-text a{
+	color: white;
+}
+
+/* Small Team */
+#team{
+	padding-bottom: 115px;
+}
+.small-team{
+	margin-left: 15px;
+	display: inline-block;
+	margin-bottom: 15px;
+
+}
+.small-team img{
+	max-width: 360px;
+}
+.block-team{
+	display: none;
+	max-width: 335px;
+	position: absolute;
+	margin-top: -260px;
+	margin-left: 15px;
+	padding: 40px 60px 40px 40px;
+	background-color: #70f5ea;
+}
+.triangle{
+	display: none;
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 18px solid #70f5ea;
+	position: absolute;
+	margin-top: -278px;
+	margin-left: 40px;
+}
+.small-team:hover .block-team, .small-team:hover .triangle{
+	display: block;
+}
+.block-team h3{
+	font-size: 20px;
+	font-family: "Merri Bold";
+}
+.block-team h3 span{
+	color: #767877;
+	font-size: 15px;
+	font-family: "Merri Reg";
+	font-style: italic; 
+}
+.block-team p{
+	font-family: "Ral Reg";
+	font-size: 16px;
+	color: #275551;
+}
+.block-team a{
+	margin-left: 5px;
+	color: #214946;
+}
+
+/* Commens */
+#commens{
+	background-color: #f9fbfb;
+	padding-bottom: 130px;
+}
+.com-slaid{
+	margin-bottom: 25px;
+}
+.com-img{
+	display: inline-block;
+	float: left;
+}
+.com-img img{
+	height: 410px;
+	position: relative;
+	max-width: 320px;
+	margin-left: 40px;
+	box-shadow: 0px 3px 14px 0px rgba(20, 20, 21, 0.28);
+}
+.com-img-grey{
+	background-color: #e9eaec;
+	height: 360px;
+	width: 390px;
+	position: absolute;
+	margin-top: 25px;
+
+}
+.com-text{
+	float: right;
+	display: inline-block;
+	width: 59%;
+	text-align: center;
+	padding: 100px 80px 70px 110px;
+	background-color: #eaebed;
+	margin-top: 25px;
+}
+.com-text h3{
+	line-height: 20px;
+	font-size: 20px;
+	font-family: "Merri Bold";
+}
+.com-text h3 span{
+	color: #767877;
+	font-size: 15px;
+	font-family: "Merri Reg";
+	font-style: italic; 
+}
+.com-text p{
+	font-family: "Ral Reg";
+	font-size: 16px;
+}
+.com-text i{
+	margin-top: 30px;
+	color: #f2da3b;
+}
+.com-slaider ul{
+	width: 390px;
+}
+.feedback-slider-arrows{
+	margin-top: 30px;
+		position: absolute;
+		height: 50px;
+		width: 50px;
+		font-size: 16px;
+		z-index: 999;
+		box-shadow: 0px 3px 14px 0px rgba(20, 20, 21, 0.28);
+		padding: 20px;
+		text-align: center;
+		background-color: white;
+		color: #b2b2b2;
+}
+.feedback-slider-arrows:hover{
+	background-color: #71f6eb;
+	color: #2f6662;
+}
+.arrow-right{
+	-webkit-transform: translateY(40px);
+	-ms-transform: translateY(40px);
+	-o-transform: translateY(40px);
+	transform: translateY(40px);
+	right: 0;
+	bottom: 0;
+}
+.arrow-left{
+	-webkit-transform: translateY(40px);
+	-ms-transform: translateY(40px);
+	-o-transform: translateY(40px);
+	transform: translateY(40px);
+	margin-right: 100px;
+	right: 0;
+	bottom: 0;
+}
+/* Img */
+#img{
+	padding-top: 110px;
+	padding-bottom: 120px;
+}
+/* Contacts */
+#contacts{
+	background-image: url(../img/christmas_snow_trees-wide.png);
+	padding-bottom: 96px;
+	padding-top: 120px;
+}
+form{
+	background: rgba(68, 88, 99,0.7);
+	padding: 50px 25px 40px 75px;
+	width: 54%;
+	float: left;
+	height: 460px;
+}
+form input{
+	height: 40px;
+}
+form input, textarea{
+	display: block;
+	border: none;
+	outline:0;
+	background: transparent;
+	border-bottom: 2px solid #b1b7bc;
+	width: 100%;
+	color: #b4bcc1;
+	margin-top: 10px;
+	font-size: 15px;
+}
+input::-moz-placeholder{
+ 	color: #b4bcc1; 
+}
+input::-webkit-input-placeholder{
+	color: #b4bcc1; 
+}
+textarea::-moz-placeholder{
+ 	color: #b4bcc1; 
+}
+textarea::-webkit-input-placeholder{
+	color: #b4bcc1; 
+}
+form button{
+	font-family: "Mont Reg";
+	margin-top: 40px;
+	font-size: 18px;
+	color: #326b67;
+	padding: 15px 40px 15px 40px;
+	background-color: #6eeee4;
+	border: none;
+}
+.contacts{
+	padding: 35px 25px 20px 25px;
+	background: rgba(68, 88, 99,0.7);
+	float: right;
+	width: 44%;
+	height: 460px;
+}
+.contacts-text{
+	color: #d2d5d7;
+	font-size: 15px;
+	line-height: 22px;
+}
+.map{
+	margin-top: 20px;
+}
+/* Footer */
+footer{
+	background-color: #262b2e;
+	padding: 90px 0px;
+	text-align: center;
+}
+.footer-img{
+	height: 45px;
+	width: 50px;
+	background-color: #3f4244;
+	margin: 0 auto;
+	display: inline-block;
+}
+.footer-img a{
+	display: inline-block;
+	color: #bbb8b9;
+	padding: 8px;
+}
+.footer-img:hover {
+	background-color: #6eeee4;
+	color: black;
+}
+.footer-img a:hover{
+	color: black;
+}
+footer p{
+	font-size: 16px;
+	color: #dedfdf;
+	font-family: "Ral Reg";
+}
+
+@media (min-width: 0px) and ( max-width: 767px){
+.section-text h1{
+	font-size: 30px;
+	padding-top: 70px;
+}
+.section-text p{
+	font-size: 12px;
+	margin-bottom: 30px;
+}
+.main-text h1{
+	margin-top: 100px;
+	font-size: 30px;
+	margin-bottom: 80px;
+}
+.main-text button{
+	width: 225px;
+	height: 50px;
+	border: #3c3c3d solid 1px;
+	margin-bottom: 80px;
+	background-color: #eff0f2;
+	font-size: 18px;
+}
+.main-text button a{
+	text-decoration: none;
+	color: #3c3c3d;
+	font-family: "Mont Reg";
+}
+/* About Us */
+.about-us{
+	margin-bottom: 45px;
+}
+.about-slaid{
+	display: none;
+}
+
+.about-info{
+	padding-top: 15px;
+	padding-left: 45px;
+	padding-right: 50px;
+}
+.about-info h2{
+	color: #646464;
+	font-size: 17px;
+	font-family: "Mant Bold";
+	margin-bottom: 32px;
+}
+.about-info p{
+	font-size: 16px;
+	color: #bfc1c1;
+	margin-bottom: 45px;
+	font-family: "Ral Reg";
+	line-height: 25px;
+}
+/* Works */
+.work{
+	margin-bottom: 125px;
+}
+.work-img{
+	text-align: center;
+	margin-bottom: 15px;
+}
+/* Servisec */
+#services{
+	display: none;
+}
+/* Small Team */
+#team{
+	padding-bottom: 115px;
+}
+.small-team{
+	width: 100vw;
+	text-align: center;
+	margin-left: 0;
+}
+.small-team img{
+	margin-right: 15px;
+}
+.small-team:hover .triangle{
+	display: none;
+}
+.block-team{
+	margin-left: 30px;
+	display: block;
+}
+
+/* Commens */
+#commens{
+	padding-bottom: 70px;
+}
+.com-img{
+	text-align: center;
+}
+.com-img img{
+	height: 410px;
+}
+.com-img-grey{
+	display: none;
+}
+.com-text{
+	width: 100%;
+	padding: 80px 60px 50px 90px;
+}
+.com-text h3{
+	line-height: 20px;
+	font-size: 20px;
+	font-family: "Merri Bold";
+}
+.com-text h3 span{
+	color: #767877;
+	font-size: 15px;
+	font-family: "Merri Reg";
+	font-style: italic; 
+}
+.com-text p{
+	font-family: "Ral Reg";
+	font-size: 16px;
+}
+.com-text i{
+	margin-top: 30px;
+	color: #f2da3b;
+}
+.com-slaider ul{
+	width: 300px;
+}
+
+/* Img */
+#img{
+	display: none;
+}
+
+/* Contacts */
+#contacts{
+	padding-top: 60px;
+}
+form{
+	padding: 50px 25px 40px 25px;
+	width: 100%;
+}
+.contacts{
+	float: left;
+	width: 100%;
+}
+iframe{
+	width: 100%;
+}
+}
+@media (min-width: 768px) and ( max-width: 1199px){
+.section-text h1{
+	font-size: 30px;
+	padding-top: 70px;
+}
+.section-text p{
+	font-size: 12px;
+	margin-bottom: 30px;
+}
+.main-text h1{
+	margin-top: 100px;
+	font-size: 30px;
+	margin-bottom: 80px;
+}
+.main-text button{
+	width: 225px;
+	height: 50px;
+	border: #3c3c3d solid 1px;
+	margin-bottom: 80px;
+	background-color: #eff0f2;
+	font-size: 18px;
+}
+.main-text button a{
+	text-decoration: none;
+	color: #3c3c3d;
+	font-family: "Mont Reg";
+}
+/* About Us */
+.about-us{
+	margin-bottom: 45px;
+}
+
+.about-info{
+	padding-top: 15px;
+	padding-left: 45px;
+	padding-right: 50px;
+}
+.about-info h2{
+	color: #646464;
+	font-size: 17px;
+	font-family: "Mant Bold";
+	margin-bottom: 32px;
+}
+.about-info p{
+	font-size: 16px;
+	color: #bfc1c1;
+	margin-bottom: 45px;
+	font-family: "Ral Reg";
+	line-height: 25px;
+}
+/* Works */
+.work{
+	margin-bottom: 125px;
+}
+.work-img{
+	text-align: center;
+	margin-bottom: 15px;
+}
+/* Servisec */
+#services{
+	display: none;
+}
+/* Small Team */
+#team{
+	padding-bottom: 115px;
+}
+.small-team{
+	width: 100vw;
+	text-align: center;
+	margin-left: 0;
+}
+.small-team img{
+	margin-right: 15px;
+}
+.small-team:hover .triangle{
+	display: none;
+}
+.block-team{
+	margin-left: 30px;
+	display: block;
+}
+
+/* Commens */
+#commens{
+	padding-bottom: 70px;
+}
+.com-img{
+	text-align: center;
+}
+.com-img img{
+	height: 410px;
+}
+.com-img-grey{
+	display: none;
+}
+.com-text{
+	width: 100%;
+	padding: 80px 60px 50px 90px;
+}
+.com-text h3{
+	line-height: 20px;
+	font-size: 20px;
+	font-family: "Merri Bold";
+}
+.com-text h3 span{
+	color: #767877;
+	font-size: 15px;
+	font-family: "Merri Reg";
+	font-style: italic; 
+}
+.com-text p{
+	font-family: "Ral Reg";
+	font-size: 16px;
+}
+.com-text i{
+	margin-top: 30px;
+	color: #f2da3b;
+}
+.com-slaider ul{
+	width: 300px;
+}
+
+/* Img */
+#img {
+	display: none;
+}
+
+/* Contacts */
+#contacts{
+	padding-top: 60px;
+}
+form{
+	padding: 50px 25px 40px 25px;
+	width: 100%;
+}
+.contacts{
+	float: left;
+	width: 100%;
+}
+iframe{
+	width: 100%;
+}
+}
